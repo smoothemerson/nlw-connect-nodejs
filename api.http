@@ -2,27 +2,36 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Usuário Indicado 2",
-  "email": "indicado3@email.com",
-  "referrer": "14a859b3-0582-46f6-b619-0996644695de"
+  "name": "Usuário 5",
+  "email": "usuario5@email.com",
+  "referral": "290ab628-4f62-41dd-a53b-d79dcfde525f"
 }
 
 ###
 
-GET http://localhost:3333/invites/28404596-76a5-4f88-9dc7-d6d9f98891d3
+GET http://localhost:3333/invites/290ab628-4f62-41dd-a53b-d79dcfde525f
 
 ### 
 
-GET http://localhost:3333/subscribers/28404596-76a5-4f88-9dc7-d6d9f98891d3/ranking/clicks
+GET http://localhost:3333/subscribers/290ab628-4f62-41dd-a53b-d79dcfde525f/ranking/clicks
 
 ###
 
-GET http://localhost:3333/subscribers/28404596-76a5-4f88-9dc7-d6d9f98891d3/ranking/count
+GET http://localhost:3333/subscribers/075ff07e-f227-4e80-ac78-766dd78ace6c/ranking/count
 
 ###
 
-GET http://localhost:3333/subscribers/28404596-76a5-4f88-9dc7-d6d9f98891d3/ranking/position
+GET http://localhost:3333/subscribers/075ff07e-f227-4e80-ac78-766dd78ace6c/ranking/position
 
 ###
 
 GET http://localhost:3333/ranking
+
+###
+
+POST http://localhost:3333/messages
+Content-Type: application/json
+
+{
+  "message": "Me diga o nome dos usuários que não conseguiram convidar ninguém pro evento!"
+}
